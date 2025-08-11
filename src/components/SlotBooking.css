@@ -1,0 +1,103 @@
+/* 🎨 Overall Container Styling */
+.slot-container {
+  text-align: center;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  max-width: 1100px;
+}
+
+/* 🏷 Title Styling */
+.slot-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #d63384;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+/* ✨ Title Underline Effect */
+.slot-title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #ff80ab, #ff4081);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* 📦 Grid Layout */
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* 💳 Card Styling */
+.slot-card {
+  background: linear-gradient(135deg, #ffffff, #ffe4ec);
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+/* Hover Animation */
+.slot-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  border: 2px solid #ff80ab;
+}
+
+/* 📝 Text Styles */
+.slot-card h3 {
+  font-size: 22px;
+  color: #e91e63;
+  margin-bottom: 8px;
+}
+
+.slot-card p {
+  margin: 4px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+/* 🚫 Booked State */
+.slot-card.booked {
+  background: #f3f3f3;
+  color: #888;
+  border: 2px solid #ccc;
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* 🎯 Button Styling */
+.slot-button {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #ff80ab, #ff4081);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slot-button:hover {
+  background: linear-gradient(135deg, #ff5c93, #e91e63);
+  transform: scale(1.05);
+}
+
+.slot-button:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+  transform: none;
+}

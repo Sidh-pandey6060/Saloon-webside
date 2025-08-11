@@ -1,0 +1,106 @@
+/* 🌟 Container */
+.worker-container {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #fff0f6, #ffffff);
+}
+
+/* 🏷 Title */
+.worker-title {
+  font-size: 28px;
+  color: #d63384;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* ✨ Subtitle */
+.worker-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 35px;
+}
+
+/* 📦 Worker Grid */
+.worker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* 💳 Worker Card */
+.worker-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.worker-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 🖼 Image */
+.worker-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* 📄 Worker Info */
+.worker-info {
+  padding: 15px;
+}
+
+.worker-info h3 {
+  color: #e91e63;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.worker-skill {
+  font-weight: bold;
+  color: #444;
+}
+
+.worker-experience,
+.worker-specialty {
+  color: #555;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* ⭐ Rating */
+.worker-rating {
+  color: gold;
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.rating-text {
+  color: #555;
+  font-size: 14px;
+}
+
+/* 🎯 Book Button */
+.worker-book-btn {
+  background: linear-gradient(135deg, #ff80ab, #ff4081);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.worker-book-btn:hover {
+  background: linear-gradient(135deg, #ff5c93, #e91e63);
+  transform: scale(1.05);
+}

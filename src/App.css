@@ -1,0 +1,274 @@
+/* ===== General Styles ===== */
+.app {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #ff5a5f;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #ff5a5f;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Carousel Container ===== */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.hairstyle-carousel {
+  display: flex;
+  gap: 20px;
+  animation: scrollCarousel 15s linear infinite;
+}
+
+.hairstyle-carousel:hover {
+  animation-play-state: paused;
+}
+
+/* Infinite scroll animation */
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Hairstyle Box Styles */
+.hairstyle-box {
+  flex: 0 0 auto;
+  width: 180px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hairstyle-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.hairstyle-box img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.hairstyle-box p {
+  padding: 10px;
+  background: #ff5a5f;
+  color: white;
+  font-weight: bold;
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 30px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  background-color: #ff5a5f;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+/* ===== Carousel Container ===== */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.hairstyle-carousel {
+  display: flex;
+  gap: 20px;
+  animation: scrollCarouselRight 5s linear infinite; /* Faster speed (10s instead of 15s) */
+}
+
+.hairstyle-carousel:hover {
+  animation-play-state: paused;
+}
+
+/* Infinite scroll animation - Right Direction */
+@keyframes scrollCarouselRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* ===== Carousel Container ===== */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.hairstyle-carousel {
+  display: flex;
+  gap: 20px;
+  animation: scrollCarouselRight 8s linear infinite; /* Faster: 8s */
+}
+
+.hairstyle-carousel:hover {
+  animation-play-state: paused;
+}
+
+/* Move from left to right infinitely */
+@keyframes scrollCarouselRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* ===== Carousel Container ===== */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.hairstyle-carousel {
+  display: flex;
+  gap: 20px;
+  animation: scrollCarouselRight 8s linear infinite; /* Speed */
+}
+
+.hairstyle-carousel:hover {
+  animation-play-state: paused;
+}
+
+/* Left edge → Right edge */
+@keyframes scrollCarouselRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* section tillet */
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ff5a5f; /* Salon brand pink/red */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Add a fancy underline */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff5a5f, #ff8a80);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* footer */
+.footer {
+  background: linear-gradient(135deg, #ff5a5f, #ff8a80);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-top: 5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+.footer p {
+  margin: 8px 0;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.footer p:last-child {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Optional: subtle fade-in animation for footer */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  animation: fadeUp 1s ease-in-out;
+}
+
