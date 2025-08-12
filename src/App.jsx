@@ -54,7 +54,7 @@ export default function App() {
               <p>Classic Cut</p>
             </div>
             <div className="hairstyle-box">
-              <img src="/assets/pexels (2).jpg" alt="Style 2" />
+              <img src="/assets/pix.jpg" alt="Style 2" />
               <p>Layered Hair</p>
             </div>
             <div className="hairstyle-box">
