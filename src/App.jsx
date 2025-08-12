@@ -37,28 +37,28 @@ export default function App() {
           <div className="hairstyle-carousel">
             {/* First set */}
             <div className="hairstyle-box">
-              <img src="public/assets/pexels.jpg" alt="Style 1" />
+              <img src="/assets/pexels.jpg" alt="Style 1" />
               <p>Classic Cut</p>
             </div>
             <div className="hairstyle-box">
-              <img src="public/assets/profile_richard.png" alt="Style 2" />
+              <img src="/assets/profile_richard.png" alt="Style 2" />
               <p>Layered Hair</p>
             </div>
             <div className="hairstyle-box">
-              <img src="public/assets/picture-excited-young-caucasian-man-with-busht-beard-shaved-head-pointing-fore-finger-as-if-he-knows-your-secret-smiling-mysteriously-human-facial-expressions-body-language.jpg" alt="Style 3" />
+              <img src="/assets/picture-excited-young-caucasian-man-with-busht-beard-shaved-head-pointing-fore-finger-as-if-he-knows-your-secret-smiling-mysteriously-human-facial-expressions-body-language.jpg" alt="Style 3" />
               <p>Buzz Cut</p>
             </div>
             {/* Duplicate set for smooth looping */}
             <div className="hairstyle-box">
-              <img src="public/assets/ahmad.jpg" alt="Style 1" />
+              <img src="/assets/ahmad.jpg" alt="Style 1" />
               <p>Classic Cut</p>
             </div>
             <div className="hairstyle-box">
-              <img src="public/assets/pexels (2).jpg" alt="Style 2" />
+              <img src="/assets/pexels (2).jpg" alt="Style 2" />
               <p>Layered Hair</p>
             </div>
             <div className="hairstyle-box">
-              <img src="public/assets/picture-excited-young-caucasian-man-with-busht-beard-shaved-head-pointing-fore-finger-as-if-he-knows-your-secret-smiling-mysteriously-human-facial-expressions-body-language.jpg" alt="Style 3" />
+              <img src="/assets/picture-excited-young-caucasian-man-with-busht-beard-shaved-head-pointing-fore-finger-as-if-he-knows-your-secret-smiling-mysteriously-human-facial-expressions-body-language.jpg" alt="Style 3" />
               <p>Buzz Cut</p>
             </div>
           </div>
