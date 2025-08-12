@@ -17,7 +17,7 @@ export default function App() {
     <div className="app">
       {/* Logo and Title */}
       <div className="logo-container">
-        <img src="src/assets/logo.png" alt="Salon Logo" className="logo" />
+        <img src="/logo.png" alt="Salon Logo" className="logo" />
         <h1 className="title">SP Saloon</h1>
       </div>
 
